@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = prompt("Nhập kí tự"); 
+        var num = '0123456789';
+        function isKiTuSo(str){
+            if(num.indexOf(str) !== -1){
+                return true;
+            }
+            return false;
+        }
+        if(isKiTuSo(str) == true){
+            alert(str + " là kí tự số");
+        } else{
+            alert(str + " không phải là kí tự số");
+        }
+    </script>
+</body>
+</html>
